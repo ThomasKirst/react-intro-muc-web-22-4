@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Box from './Box';
+
+function Headline() {
+  return <h1>This is my headline</h1>;
+}
+
+function Subline() {
+  return <h2>And a subline</h2>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Headline />
+      <Subline />
+      <Box />
+      <Box />
+      <Box />
+    </main>
   );
 }
 
